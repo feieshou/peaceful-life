@@ -1,0 +1,18 @@
+createdAt: "2018-06-13T09:28:04.312Z"
+updatedAt: "2018-06-13T12:31:40.667Z"
+type: "MARKDOWN_NOTE"
+folder: "94b528edde9797c59ae9"
+title: "Session"
+content: '''
+  ## Session
+  由于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，这个机制就Session。session记录用户信息，存放在后端，存储方式可以是files，关系型数据库，memched/redis等
+  
+  -----
+  **laravel关于session的操作**：
+  [HTTP Session - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/5.6/session)
+  **session原理**
+  [Session原理 - 前沿开发团队 - SegmentFault 思否](https://segmentfault.com/a/1190000004627894)
+'''
+tags: []
+isStarred: false
+isTrashed: false

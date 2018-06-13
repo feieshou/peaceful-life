@@ -1,0 +1,42 @@
+createdAt: "2018-06-12T09:17:44.826Z"
+updatedAt: "2018-06-12T11:09:50.207Z"
+type: "MARKDOWN_NOTE"
+folder: "817d5f377e49f6af4c61"
+title: "gitlab部署（CentOS7）"
+content: '''
+  ## gitlab部署（CentOS7）
+  ### 准备工作
+  
+  1. 系统防火墙里面开放HTTP和SSH
+  >sudo yum install -y curl policycoreutils-python openssh-server
+  sudo systemctl enable sshd
+  sudo systemctl start sshd
+  sudo firewall-cmd --permanent --add-service=http
+  sudo systemctl reload firewalld
+  
+  2. 安装postfix（发送提醒邮件用） 如果想使用smtp服务发送邮件，可以跳过这步，在gitlab安装完成后配置
+  
+  >sudo yum install postfix
+  sudo systemctl enable postfix
+  sudo systemctl start postfix
+  配置邮箱：
+  [SMTP settings | GitLab](https://docs.gitlab.com/omnibus/settings/smtp.html)
+  
+  3. 安装
+  > curl -sS http://packages.gitlab.cc/install/gitlab-ce/script.rpm.sh | sudo bash
+  sudo yum install gitlab-ce
+  如果已经有低版本的gitlab，这个命令实会去更新到最新版本，如果版本跨度过大，会报错，并提醒你先安装到低一点的版本。所以，更方便的做法是卸载老版本（yum remove/earse）
+  
+  4. 配置页面
+  > vim /etc/gitlab/gitlab.rb
+  修改为类似：
+  external_url  'http://172.17.17.10:81'
+  进入到页面后，会强制修改密码
+  云主机的话一定要检查控制台上安全组关于端口的控制打开了没，浪费了2个小时的事情不想再经历一遍QAQ
+'''
+tags: [
+  "部署工具"
+  "gitlab"
+]
+isStarred: false
+isTrashed: false

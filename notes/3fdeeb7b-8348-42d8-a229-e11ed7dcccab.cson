@@ -1,0 +1,21 @@
+createdAt: "2018-06-12T11:51:00.181Z"
+updatedAt: "2018-06-12T12:34:56.980Z"
+type: "MARKDOWN_NOTE"
+folder: "817d5f377e49f6af4c61"
+title: "gitlab基本概念"
+content: '''
+  ## gitlab基本概念
+  1. git gitlab github区别
+  Git是版本控制系统，Github是在线的基于Git的代码托管服务。Github有个小缺陷, 就是你的repo都需要public(公开), 如果你想要创建private(私人)的repo, 那得付钱。不过, 幸好, Gitlab解决了这个问题, 可以在上面创建免费的私人repo
+  2. git的常用命令 （这个里面包含了svn和git区别的对比）
+  [Gitlab的使用（内含Git命令大全） - 简书](https://www.jianshu.com/p/038ccb3518f2)
+  3. gitlab的常用操作
+  配置文件：/etc/gitlab/gitlab.rb 
+  gitlab-ctl tail  查看日志
+  gitlab-rails console 进入控制台，可以在控制台里利用code对gitlab操作（修改用户密码，发送邮件之类）
+'''
+tags: [
+  "gitlab"
+]
+isStarred: false
+isTrashed: false
