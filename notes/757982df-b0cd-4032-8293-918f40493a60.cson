@@ -1,0 +1,16 @@
+createdAt: "2018-06-14T07:57:36.735Z"
+updatedAt: "2018-06-14T08:00:41.341Z"
+type: "MARKDOWN_NOTE"
+folder: "4c00a07f1516283dbdd0"
+title: "composer"
+content: '''
+  ## composer
+  拿到了个项目，不知道要咋配环境，别人提醒知道要用composer把该有的依赖装上。
+  这时候就要 php composer.phar install。如果目录下有composer.json就按着这个配置来配
+  更多composer的使用：
+  [Command-line interface / Commands - Composer](https://getcomposer.org/doc/03-cli.md)
+  [命令行 | Composer 中文文档 | Composer 中文网](https://docs.phpcomposer.com/03-cli.html#init)
+'''
+tags: []
+isStarred: false
+isTrashed: false

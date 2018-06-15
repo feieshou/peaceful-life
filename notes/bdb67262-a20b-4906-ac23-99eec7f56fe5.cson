@@ -1,0 +1,17 @@
+createdAt: "2018-06-14T02:00:00.219Z"
+updatedAt: "2018-06-14T02:33:02.864Z"
+type: "MARKDOWN_NOTE"
+folder: "817d5f377e49f6af4c61"
+title: "docker"
+content: '''
+  ## docker
+  
+  [Docker —— 从入门到实践 · GitBook](https://legacy.gitbook.com/book/yeasy/docker_practice/details)
+  多看几遍+实践=迟早会看多  ----又困又饿的狗头
+  1. 区别于虚拟机
+  2. 一条大鲸鱼，上面随便插卡
+  3. 
+'''
+tags: []
+isStarred: false
+isTrashed: false

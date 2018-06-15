@@ -1,0 +1,29 @@
+createdAt: "2018-06-14T07:34:38.111Z"
+updatedAt: "2018-06-14T07:44:11.490Z"
+type: "MARKDOWN_NOTE"
+folder: "4c00a07f1516283dbdd0"
+title: "一些细节问题"
+content: '''
+  ## 一些细节问题
+  1. php发送header之前，不可以有输出
+  问题产生背景：
+  使用php artisan启动服务的时候，报错如下：
+  <br>>  [ErrorException]
+    Cannot modify header information - headers already sent by (output started at /Users/lihantian/repository/outsource_projects/wu_xb/xiaoetong_project_new/wechat_app_admin_new
+    /trunk/bootstrap/app.php:13)
+  (/Users/lihantian/Boostnote/attachments/973b313e-58e6-4c02-9625-1801022b8e29/c22f94a0.png)<p>
+  查到资料：
+  [How to fix "Headers already sent" error in PHP - Stack Overflow](https://stackoverflow.com/questions/8028957/how-to-fix-headers-already-sent-error-in-php?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+  翻译：
+  [解决 PHP "headers already sent" 错误 | 徐豪杰写字的地方](http://blog.jayxhj.com/2016/03/fix-headers-already-sent-error-in-php/)
+  **问题定位到之前required_once语句找不到文件产生的报错输出，导致了这个问题**
+  
+  2. 在使用目录相对路径的情况下, 相对路径的基点, 永远都是当前工作目录
+  问题背景：
+  问题1的后续。
+  解决：
+  **发现是相对路径写的不对，以该文件所在路径为基点，导致找的地方不对，继而找不到文件**
+'''
+tags: []
+isStarred: false
+isTrashed: false

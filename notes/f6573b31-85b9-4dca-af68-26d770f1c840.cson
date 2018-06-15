@@ -1,0 +1,13 @@
+createdAt: "2018-06-14T09:23:10.899Z"
+updatedAt: "2018-06-14T11:20:47.247Z"
+type: "MARKDOWN_NOTE"
+folder: "94b528edde9797c59ae9"
+title: "nginx"
+content: '''
+  ## nginx
+  [初探 Nginx 架构 - Nginx 入门指南 - 极客学院Wiki](http://wiki.jikexueyuan.com/project/nginx/nginx-framework.html)
+  只记得 一个master 多个worker 建议work数和核数一致。master负责拿到消息然后指挥worker干活。异步非阻塞机制来实现高并发
+'''
+tags: []
+isStarred: false
+isTrashed: false
